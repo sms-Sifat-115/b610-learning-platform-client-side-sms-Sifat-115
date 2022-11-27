@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Home from "../Home/Home";
 
 const Navbar = () => {
   return (
     <div className="">
-      <div className="navbar bg-base-100">
+      <div className="navbar md:bg-base-300 bg-fuchsia-500 md:text-purple-500 text-primary-content">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -25,13 +26,13 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact text-purple-500 dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link>Home</Link>
+                <Link to={Home}>Home</Link>
               </li>
               <li tabIndex={0}>
-                <Link className="justify-between">
+                <Link className="justify-around h-10 dropdown-content  menu menu-compact ">
                   Courses
                   <svg
                     className="fill-current"
@@ -43,7 +44,7 @@ const Navbar = () => {
                     <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                   </svg>
                 </Link>
-                <ul className="p-2">
+                <ul className="p-2 text-purple-500">
                   <li>
                     <Link>HTML</Link>
                   </li>
@@ -62,25 +63,27 @@ const Navbar = () => {
                 </ul>
               </li>
               <li>
-                <Link>FAQ</Link>
+                <Link className="mt-10">FAQ</Link>
               </li>
               <li>
-                <Link className="btn btn-primary mt-4">Login</Link>
+                <Link className="btn btn-primary mt-4 text-primary-content">Login</Link>
               </li>
               <li>
-                <Link className="btn btn-neutral my-3">Register</Link>
+                <Link className="btn btn-neutral my-3 text-primary-content">Register</Link>
               </li>
             </ul>
           </div>
-          <Link className="btn btn-ghost normal-case text-xl">
+          <Link to={Home} className="btn btn-ghost normal-case text-xl">
             <img src="./favicon.ico" alt="" className="h-10 mr-3" />
             Scholarholic
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
+
+            
           <ul className="menu menu-horizontal p-0">
             <li>
-              <Link>Home</Link>
+              <Link to={Home}>Home</Link>
             </li>
             <li tabIndex={0}>
               <Link>
@@ -123,7 +126,7 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Search"
-              className="input input-bordered input-primary w-full max-w-xs"
+              className="input input-bordered input-primary input-ghost w-full max-w-xs"
             />
             <button className="btn btn-outline btn-primary btn-square ml-1">
               <svg
@@ -182,7 +185,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end hidden sm:flex">
           <Link className="btn btn-primary">Login</Link>
-          <Link className="btn btn-neutral mx-3">Register</Link>
+          <Link className="btn btn-primary btn-outline btn-ghost mx-3">Register</Link>
         </div>
       </div>
       <div className="btm-nav lg:hidden">
