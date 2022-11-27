@@ -4,7 +4,7 @@ import Home from "../Home/Home";
 
 const Navbar = () => {
   return (
-    <div className="">
+    <div className="sticky top-0 z-10">
       <div className="navbar md:bg-base-300 bg-fuchsia-500 md:text-purple-500 text-primary-content">
         <div className="navbar-start">
           <div className="dropdown">
@@ -26,7 +26,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact text-purple-500 dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact text-purple-500 dropdown-content mt-3 p-2 shadow bg-base-300 rounded-box w-52"
             >
               <li>
                 <Link to={Home}>Home</Link>
@@ -98,7 +98,7 @@ const Navbar = () => {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </Link>
-              <ul className="p-2">
+              <ul className="p-2 bg-base-300">
                 <li>
                   <Link>HTML</Link>
                 </li>
@@ -188,7 +188,7 @@ const Navbar = () => {
           <Link className="btn btn-primary btn-outline btn-ghost mx-3">Register</Link>
         </div>
       </div>
-      <div className="btm-nav lg:hidden">
+      <div className="btm-nav lg:hidden bottom-0">
         <Link className="text-primary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
