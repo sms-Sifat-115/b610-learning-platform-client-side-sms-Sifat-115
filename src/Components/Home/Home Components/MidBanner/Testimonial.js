@@ -2,8 +2,8 @@ import React from "react";
 
 const Testimonial = () => {
   return (
-    <div className="text-center my-10">
-        <h1 className="text-4xl text-grey-400 my-8">Testimonials from Our Great Alumni</h1>
+    <div className="text-center my-10 mb-18">
+        <h1 className="md:text-4xl text-xl text-grey-400 my-8">Testimonials from Our Great Alumni</h1>
       <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative justify-center w-full">
           <div class="flex justify-center">

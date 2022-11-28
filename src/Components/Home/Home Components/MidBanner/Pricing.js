@@ -3,7 +3,7 @@ import React from "react";
 const Pricing = () => {
   return (
     <div className="my-9">
-      <div className="text-center text-5xl font-serif">
+      <div className="text-center text-xl md:text-5xl font-serif">
         <h1>Learn Unlimited with Scholarholic+</h1>
       </div>
       <div className="md:flex justify-center md:gap-9 my-8">
