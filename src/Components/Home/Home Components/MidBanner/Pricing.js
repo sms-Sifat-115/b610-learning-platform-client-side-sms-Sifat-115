@@ -6,7 +6,7 @@ const Pricing = () => {
       <div className="text-center text-5xl font-serif">
         <h1>Learn Unlimited with Scholarholic+</h1>
       </div>
-      <div className="md:flex justify-center gap-9 my-8">
+      <div className="md:flex justify-center md:gap-9 my-8">
         <div className="card w-96 glass my-4 hover:bg-primary">
           <div className="card-body">
             <h2 className="card-title">Scholorholic Hero</h2>
